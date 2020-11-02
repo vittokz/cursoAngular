@@ -9,6 +9,7 @@ import { ContactComponent } from './app/contact/contact.component';
 import { AboutComponent } from './app/about/about.component';
 import {HttpClientModule} from '@angular/common/http';
 import { CardDetalleComponent } from './app/card-detalle/card-detalle.component';
+import { StatComponent } from './app/stat/stat.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { CardDetalleComponent } from './app/card-detalle/card-detalle.component'
     CardComponent,
     ContactComponent,
     AboutComponent,
-    CardDetalleComponent
+    CardDetalleComponent,
+    StatComponent
   ],
   imports: [
     BrowserModule,

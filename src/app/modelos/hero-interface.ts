@@ -10,6 +10,12 @@ export interface IHero{
             power: number;
             combat: number;
         };
+        images: {
+            xs: string;
+            sm: string;
+            md: string;
+            lg: string;
+        };
 }
 
 export interface IHeroDetalle{

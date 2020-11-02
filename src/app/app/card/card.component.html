@@ -1,20 +1,72 @@
-<div class="card" style="width: 18rem;">
-    <img src="..." class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">{{heroes.id}}</h5>
-      <p class="card-text">{{heroes.name}}</p>
+<div class="card">
+  <h2>{{heroes.id}}. {{heroes.name}}</h2>
+    <img src="{{heroes.images.sm}}" class="card-img-top" alt="...">
       <label>Power Stats</label>
-      <label>Intelligence</label>
-      <p>{{heroes.powerstats.intelligence}}</p>
-      <label>strength</label>
-      <p>{{heroes.powerstats.strength}}</p>
-      <label>speed</label>
-      <p>{{heroes.powerstats.speed}}</p>
-      <label>durability</label>
+      <app-stat title="Intelligence" [value]="heroes.powerstats.intelligence"></app-stat>
+      <app-stat title="Strength" [value]="heroes.powerstats.intelligence"></app-stat>
+      <app-stat title="Strength" [value]="heroes.powerstats.strength"></app-stat>
+      <app-stat title="Speed" [value]="heroes.powerstats.speed"></app-stat>
+      <app-stat title="Durability" [value]="heroes.powerstats.durability"></app-stat>
+      <app-stat title="Power" [value]="heroes.powerstats.power"></app-stat>
+      <app-stat title="Combat" [value]="heroes.powerstats.combat"></app-stat>
+
+    <!--   <div class="bosStart">
+         <p>Intelligence</p>
+         <p>{{heroes.powerstats.intelligence}}</p>
+          <div class="start">
+            <div class="start-level">
+              
+            </div>
+          </div>
+      </div>
+ -->
+    <!--   <div class="bosStart">
+         <p>strength</p>
+         <p>{{heroes.powerstats.strength}}</p>
+         <div class="start">
+           <div class="start-level">
+             
+           </div>
+         </div>
+     </div>
+
+     <div class="bosStart">
+        <p>speed</p>
+        <p>{{heroes.powerstats.speed}}</p>
+        <div class="start">
+          <div class="start-level">
+            
+          </div>
+        </div>
+     </div>
+
+     <div class="bosStart">
+      <p>durability</p>
       <p>{{heroes.powerstats.durability}}</p>
-      <label>power</label>
+        <div class="start">
+          <div class="start-level">
+            
+          </div>
+        </div>
+     </div>
+
+     <div class="bosStart">
+      <p>power</p>
       <p>{{heroes.powerstats.power}}</p>
-      <label>combat</label>
+       <div class="start">
+         <div class="start-level">
+           
+         </div>
+       </div>
+     </div> 
+
+     <div class="bosStart">
+      <p>combat</p>
       <p>{{heroes.powerstats.combat}}</p>
-    </div>
+       <div class="start">
+         <div class="start-level">
+           
+         </div>
+       </div>
+     </div>    -->
   </div>
